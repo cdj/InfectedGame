@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Face mask</title>
+		<title>The Infected Game</title>
 		<meta charset="utf-8">
 		<style>
 			@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
@@ -113,21 +113,9 @@
 			<br/>
 			<input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
 			<select name="mask" id="selectmask">
-				<option value="6">Cage</option>
+				<option value="6">Zombie</option>
 			</select>
 			<div id="text">
-				<p>This is an example of face masking using the javascript library <a href="https://github.com/auduno/clmtrackr"><em>clmtrackr</em></a>.</p>
-				<p>Note that this example needs support for WebGL, and works best in Google Chrome.</p>
-				<div id="gum" class="nohide">
-					<p>To try it out:
-						<ol>
-							<li>allow the page to use your webcamera</li>
-							<li>make sure that your face is clearly visible in the video, and click start</li>
-							<li>keep your face still, and wait till model fits your face and mask is applied</li>
-							<li>try out different masks from the dropdown</li>
-						<ol>
-					</p>
-				</div>
 				<div id="nogum" class="hide">
 					<p>
 						There was some problem trying to capture your webcamera, please check that your browser supports WebRTC. Using a fallback video instead. try it out:
@@ -139,7 +127,6 @@
 					</p>
 				</div>
 			</div>
-			<a href="https://github.com/auduno/clmtrackr"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
 			<img id="cage2" class="masks" src="./media/cage.jpg"></img>
 			<script>
 				var vid = document.getElementById('videoel');
